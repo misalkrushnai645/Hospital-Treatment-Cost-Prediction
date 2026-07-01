@@ -79,4 +79,4 @@ if smoker == "yes":
 else:
     st.info(" Tip: Maintain a healthy lifestyle.")
     st.markdown("---")
-    st.caption(("Developed by Krushnai Misal")
+    st.caption("Developed by Krushnai Misal")
