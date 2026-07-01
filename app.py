@@ -78,4 +78,5 @@ if smoker == "yes":
     st.warning(" Tip: Quit smoking to reduce future health risks.")
 else:
     st.info(" Tip: Maintain a healthy lifestyle.")
-    st.markdown("---") st.caption("Developed by Krushnai Misal")
+    st.markdown("---")
+    st.caption(("Developed by Krushnai Misal")
