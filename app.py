@@ -69,7 +69,7 @@ else:
 
 # Health Risk
 if smoker == "yes": 
-    st.error("Health Risk High")
+    st.error("Health Risk: High")
 else:
     st.success("Health Risk: Low")
 
