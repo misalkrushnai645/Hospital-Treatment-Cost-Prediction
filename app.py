@@ -57,42 +57,24 @@ if st.sidebar.button("Predict Cost"):
 
     result = pipe.predict(myinput)
     st.success(f"Predicted Hospital Treatment Cost: ₹ {round(result[0])}")
-    #BMI Status if bmi 18.5:
-
-st.info("BMI Status :
-
-Underweight")
-
+#BMI Status if bmi 18.5:
+st.info("BMI Status : Underweight")
 elif bmi < 25:
-
-st.success("BMI Status: Normal")
-
+    st.success("BMI Status: Normal")
 elif bmi < 30:
-
-st.warning("BMI Status :
-
-Overweight")
-
+    st.warning("BMI Status : Overweight")
 else:
-
-st.error("BMI Status: Obese")
+    st.error("BMI Status: Obese")
 
 # Health Risk
-
-if smoker == "yes": st.error("Health Risk High")
-
+if smoker == "yes": 
+    st.error("Health Risk High")
 else:
-
-st.success("Health Risk: Low")
+    st.success("Health Risk: Low")
 
 # Health Tip
-
 if smoker == "yes":
-
-st.warning(" Tip: Quit smoking to reduce future health risks.")
-
+    st.warning(" Tip: Quit smoking to reduce future health risks.")
 else:
-
-st.info(" Tip: Maintain a healthy lifestyle.")
-
-st.markdown("---") st.caption("Developed by Krushnai Misal")
+    st.info(" Tip: Maintain a healthy lifestyle.")
+    st.markdown("---") st.caption("Developed by Krushnai Misal")
