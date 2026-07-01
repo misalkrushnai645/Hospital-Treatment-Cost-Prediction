@@ -57,6 +57,7 @@ if st.sidebar.button("Predict Cost"):
 
     result = pipe.predict(myinput)
     st.success(f"Predicted Hospital Treatment Cost: ₹ {round(result[0])}")
+## Features
 #BMI Status 
 if bmi < 18.5:
     st.info("BMI Status : Underweight")
